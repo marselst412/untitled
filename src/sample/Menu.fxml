@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('file:D:/Projects/untitled/src/fonmenu.png'); -fx-background-size: cover;" fx:controller="sample.Menucl" xmlns="http://javafx.com/javafx/16"  xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <ImageView accessibleRole="BUTTON" fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../close.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="exBut" accessibleRole="BUTTON" fitHeight="140.0" fitWidth="420.0" pickOnBounds="true" onMouseClicked="#click" preserveRatio="true">
+         <image>
+            <Image url="@../exit.png" />
+         </image></ImageView>
+   </children>
+</VBox>

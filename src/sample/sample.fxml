@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="637.0" style="-fx-background-image: url('file:C:/Users/marsel/Pictures/ball.png'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <center>
+      <VBox alignment="CENTER" prefHeight="412.0" prefWidth="688.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="stBut1" accessibleRole="BUTTON" fitHeight="147.0" fitWidth="301.0" onMouseClicked="#clicked" onMousePressed="#pressed" onMouseReleased="#released" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../stbutton1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="andBut1" accessibleRole="BUTTON" fitHeight="147.0" fitWidth="301.0" layoutX="180.0" layoutY="116.0" onMouseClicked="#clicked" onMousePressed="#press" onMouseReleased="#releas" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../test1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
