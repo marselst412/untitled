@@ -17,14 +17,14 @@ public class Controller {
     ImageView andBut1;
 
     @FXML
-    public void press(MouseEvent event) {
-        andBut1.setImage(new Image(getClass().getClassLoader().getResourceAsStream("test2.PNG")));
-        System.exit(0);
+    public void press(MouseEvent event) throws InterruptedException {
+        andBut1.setImage(new Image(getClass().getResourceAsStream("/test2.png")));
     }
 
     @FXML
     public void releas(MouseEvent event) {
-        andBut1.setImage(new Image(getClass().getClassLoader().getResource("test1.png").toString()));
+        andBut1.setImage(new Image(getClass().getResourceAsStream("/test1.png")));
+        System.exit(0);
     }
 
     @FXML
@@ -32,16 +32,16 @@ public class Controller {
 
     @FXML
     public void pressed(MouseEvent event) {
-        stBut1.setImage(new Image(getClass().getClassLoader().getResource("stbutton2.PNG").toString()));
-        Node node = (Node) event.getSource();
-        Stage thisStage = (Stage) node.getScene().getWindow();
-        thisStage.setScene(new Scene(root2));
-        thisStage.setFullScreen(true);
+        stBut1.setImage(new Image(getClass().getResourceAsStream("/stbutton2.png")));
     }
 
     @FXML
     public void released(MouseEvent event) {
-        stBut1.setImage(new Image(getClass().getClassLoader().getResourceAsStream("stbutton1.png")));
+        stBut1.setImage(new Image(getClass().getResourceAsStream("/stbutton1.png")));
+        Node node = (Node) event.getSource();
+        Stage thisStage = (Stage) node.getScene().getWindow();
+        thisStage.setScene(new Scene(root2));
+        thisStage.setFullScreen(true);
     }
     @FXML
     public void clicked(MouseEvent event){
